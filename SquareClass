@@ -1,0 +1,34 @@
+using System;
+
+namespace ShapeEquations
+{
+    // This class is to hold a constructor to take in int paramters and has methods which are used to produces mathmatical equations. To start with:
+    // Area of a square
+
+    class Square
+    {
+        /// <summary>
+        ///This code is designed to set the paramters of the Square Class and enable the paramters to be set and used
+        /// </summary>
+        public int _height;
+        public int _width;
+
+        public Square(int height, int width)
+        {
+            Console.WriteLine("Constructor is working");
+            Height = height;
+            Width = width;
+        }
+
+        public int Height { get => _height; set => _height = value; }
+        public int Width { get => _width; set => _width = value; }
+        public int CalcualateArea { get => Height * Width; }
+        public int Parametor { get => (Height * 2) + (Width *2);}
+
+        public enum Equations
+        {
+            Area,
+            Parametor,
+        }
+    }
+}
