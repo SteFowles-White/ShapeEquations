@@ -1,0 +1,22 @@
+using System;
+
+namespace ShapeEquations
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is the width of the square");
+            int Wid = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("What is the height of the Square");
+            int hei = int.Parse(Console.ReadLine());
+
+            Square squa = new Square(hei, Wid);
+
+            Console.WriteLine(squa.CalcualateArea);
+
+
+        }
+    }
+}
