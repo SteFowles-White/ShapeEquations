@@ -1,11 +1,23 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ShapeEquations
+namespace ShapeCalculations
 {
     class Program
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("This program is designed to help you with your mathematical formula's and make things simpler for you." +
+                "All you need to to is select the shape that you are working with and input the required paramters for the equation.");
+            Console.WriteLine("You can do as many as you like, but when you finish all you ned to do is type Quit at the end! Hope you enjoy");
+
+
+
+
             Console.WriteLine("What is the width of the square");
             int Wid = int.Parse(Console.ReadLine());
 
