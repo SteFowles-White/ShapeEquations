@@ -1,12 +1,14 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ShapeEquations
+namespace ShapeCalculations
 {
-    // This class is to hold a constructor to take in int paramters and has methods which are used to produces mathmatical equations. To start with:
-    // Area of a square
 
-    class Square
-    {
+        public class Square
+        {
         /// <summary>
         ///This code is designed to set the paramters of the Square Class and enable the paramters to be set and used
         /// </summary>
@@ -23,12 +25,13 @@ namespace ShapeEquations
         public int Height { get => _height; set => _height = value; }
         public int Width { get => _width; set => _width = value; }
         public int CalcualateArea { get => Height * Width; }
-        public int Parametor { get => (Height * 2) + (Width *2);}
+        public int CalcualateParametor { get => (Height * 2) + (Width * 2); }
 
-        public enum Equations
+        public enum Shape
         {
-            Area,
-            Parametor,
+            Square = 1,
+            Triangle = 2,
+            Circle = 3,
         }
     }
 }
