@@ -1,0 +1,39 @@
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace ShapeCalculations.Tests
+{
+    [TestClass]
+    public class SquareTests
+    {
+        [TestMethod]
+        public void TestAreaMethod()
+        {
+            Square s = new Square(2, 2);
+
+            Assert.AreEqual(4, s.CalcualateArea);       
+        }
+
+        [TestMethod]
+        public void BreakTestAreaMethod()
+        {
+            Square s = new Square(2, 3);
+
+            Assert.AreNotEqual(4, s.CalcualateArea);
+        }
+        [TestMethod]
+
+        public void CalcualateParametord()
+        {
+            Square s = new Square(7, 3);
+
+            Assert.AreNotEqual(58, s.CalcualateParametor);
+        }
+        [TestMethod]
+        public void BreakCalcualateParametor()
+        {
+            Square s = new Square(2, 3);
+
+            Assert.AreNotEqual(4, s.CalcualateParametor);
+        }
+    }
