@@ -11,7 +11,7 @@ namespace ShapeCalculations.Tests
         {
             Square s = new Square(2, 2);
 
-            Assert.AreEqual(4, s.CalcualateArea);       
+            Assert.AreEqual(4, s.CalcualateArea);
         }
 
         [TestMethod]
@@ -37,3 +37,27 @@ namespace ShapeCalculations.Tests
             Assert.AreNotEqual(4, s.CalcualateParametor);
         }
     }
+
+    [TestClass]
+    public class EnumTest
+    {
+
+
+        public enum ShapeT
+        {
+            Square,
+            Triangle,
+            Circle,
+        }
+
+        [TestMethod]
+        public void EnumParseTest()
+        {
+            String chosenSquare = "Square";
+            ShapeT newShape = (ShapeT)Enum.Parse(typeof(ShapeT), chosenSquare);
+            
+            Assert.AreEqual(newShape, ShapeT.Square);
+        }
+    }
+}
+
