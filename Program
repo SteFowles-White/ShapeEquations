@@ -8,6 +8,7 @@ namespace ShapeCalculations
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
@@ -15,8 +16,20 @@ namespace ShapeCalculations
                 "All you need to to is select the shape that you are working with and input the required paramters for the equation.");
             Console.WriteLine("You can do as many as you like, but when you finish all you ned to do is type Quit at the end! Hope you enjoy");
 
+            Console.WriteLine("What is the shape you are looking to calculate?");
+            Console.WriteLine("Type in S for Square");
+            Console.WriteLine("Type in C for Circle");
+            Console.WriteLine("Type in T for Triangle");
+            
 
 
+            if (ShapeRequested == Shape.Square)
+            {
+
+            }
+    
+    
+            
 
             Console.WriteLine("What is the width of the square");
             int Wid = int.Parse(Console.ReadLine());
@@ -31,4 +44,3 @@ namespace ShapeCalculations
 
         }
     }
-}
