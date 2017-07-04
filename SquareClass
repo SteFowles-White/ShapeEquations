@@ -29,9 +29,13 @@ namespace ShapeCalculations
 
         public enum Shape
         {
-            Square = 1,
-            Triangle = 2,
-            Circle = 3,
+            Square,
+            Triangle,
+            Circle,
+        }
+        public void EnumParseShapeAnswer(String chosenSquare)
+        {
+            Shape newShape = (Shape)Enum.Parse(typeof(Shape), chosenSquare);
         }
     }
 }
