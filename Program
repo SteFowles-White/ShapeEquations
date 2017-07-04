@@ -16,18 +16,17 @@ namespace ShapeCalculations
                 "All you need to to is select the shape that you are working with and input the required paramters for the equation.");
             Console.WriteLine("You can do as many as you like, but when you finish all you ned to do is type Quit at the end! Hope you enjoy");
 
+
+            //this will be the start od the do while loop
             Console.WriteLine("What is the shape you are looking to calculate?");
-            Console.WriteLine("Type in S for Square");
-            Console.WriteLine("Type in C for Circle");
-            Console.WriteLine("Type in T for Triangle");
+            Console.WriteLine("Type in 'Square' for Square");
+            Console.WriteLine("Type in 'Circle' for Circle");
+            Console.WriteLine("Type in 'Triangle' for Triangle");
+
+             //this response will be the start of the if else statment
+         
             
 
-
-            if (ShapeRequested == Shape.Square)
-            {
-
-            }
-    
     
             
 
@@ -44,3 +43,5 @@ namespace ShapeCalculations
 
         }
     }
+}
+
