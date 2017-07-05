@@ -6,3 +6,6 @@ Extra Information
 
 The shapes to program are triangle, square and cirlce 
 
+- the square shape calcautions are paramter and area
+- the traingle calcautions are areaof traiangle pythagoras, finding ot angles
+
