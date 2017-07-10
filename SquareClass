@@ -9,9 +9,19 @@ namespace ShapeCalculations
 
         public class Square
         {
-        /// <summary>
-        ///This code is designed to set the paramters of the Square Class and enable the paramters to be set and used
-        /// </summary>
+        /// ------------------------------------------SUMMERY---------------------------------------------------------
+
+        ///This class is designed to set the paramters of the Square Class and enable the paramters to be set and used
+
+        ///-----------------------------------------------------------------------------------------------------------
+
+
+        /// -------------------------------------------------------------------------------------------------------------
+
+        ///                              SETITNG PARAMETERS AND CONSRUCTORS FOR SQUARE CALCULATIONS
+                                      
+        /// -------------------------------------------------------------------------------------------------------------
+
         public int _height;
         public int _width;
 
@@ -24,18 +34,18 @@ namespace ShapeCalculations
 
         public int Height { get => _height; set => _height = value; }
         public int Width { get => _width; set => _width = value; }
+
+
+
+        /// -------------------------------------------------------------------------------------------------------------
+
+        ///                              Methods for Calculating Mathmatical Equations
+                                     
+        /// -------------------------------------------------------------------------------------------------------------
+
         public int CalcualateArea { get => Height * Width; }
         public int CalcualateParametor { get => (Height * 2) + (Width * 2); }
 
-        public enum Shape
-        {
-            Square,
-            Triangle,
-            Circle,
-        }
-        public void EnumParseShapeAnswer(String chosenSquare)
-        {
-            Shape newShape = (Shape)Enum.Parse(typeof(Shape), chosenSquare);
-        }
+
     }
 }
