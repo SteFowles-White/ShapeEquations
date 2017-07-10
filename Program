@@ -11,20 +11,45 @@ namespace ShapeCalculations
 
         static void Main(string[] args)
         {
+            Enumshape En = new Enumshape();
+
+
+            /// -------------------------------------------------------------------------------------------------------------
+
+            ///                              INTRODUCTION TO THE CONSOLE APPLICATION
+
+            /// -------------------------------------------------------------------------------------------------------------
 
             Console.WriteLine("This program is designed to help you with your mathematical formula's and make things simpler for you." +
                 "All you need to to is select the shape that you are working with and input the required paramters for the equation.");
             Console.WriteLine("You can do as many as you like, but when you finish all you ned to do is type Quit at the end! Hope you enjoy");
 
 
-            //this will be the start od the do while loop
+
+
+            /// -------------------------------------------------------------------------------------------------------------
+
+            ///                              START OF PROGRAM
+
+            /// -------------------------------------------------------------------------------------------------------------
+            
+
             Console.WriteLine("What is the shape you are looking to calculate?");
             Console.WriteLine("Type in 'Square' for Square");
             Console.WriteLine("Type in 'Circle' for Circle");
-            Console.WriteLine("Type in 'Triangle' for Triangle");
+            Console.WriteLine("Type in 'Triangle' for Triangle : ");
+
+            /// -------------------------------------------------------------------------------------------------------------
+
+            ///                              RECIEVE IMFORMATION FROM THE USER REGARDING WHAT SHAPE
+
+            /// -------------------------------------------------------------------------------------------------------------           /// 
+
+            string UserInputForShape = En.EnumParseShapeAnswer(Console.ReadLine());
+
 
              //this response will be the start of the if else statment
-         
+            
             
 
     
@@ -42,6 +67,28 @@ namespace ShapeCalculations
 
 
         }
+
+        /// -------------------------------------------------------------------------------------------------------------
+
+        ///                                An Enum Class - SERPEATED FROM MAIN 
+
+        /// -------------------------------------------------------------------------------------------------------------
+
+        public class Enumshape
+        {
+            public enum Shape
+            {
+                Square,
+                Triangle,
+                Circle,
+            }
+            public void EnumParseShapeAnswer(String chosenSquare)
+            {
+                Shape newShape = (Shape)Enum.Parse(typeof(Shape), chosenSquare);
+            }
+        }
+
+
     }
 }
 
