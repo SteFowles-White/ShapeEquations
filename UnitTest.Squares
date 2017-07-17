@@ -38,26 +38,68 @@ namespace ShapeCalculations.Tests
         }
     }
 
+
     [TestClass]
-    public class EnumTest
+    public class TestForMainIfProgram
     {
-
-
-        public enum ShapeT
+        //This is used to pass the test
+        [TestMethod]
+        public void MainIfStatmentForSquare()
         {
-            Square,
-            Triangle,
-            Circle,
+
+            string UserInput = "Square";
+
+            if (UserInput.ToLower() == "square")
+            {
+                Console.WriteLine("What is the width of the square");
+                int Wid = 5;
+
+                Console.WriteLine("What is the height of the Square");
+                int hei = 5;
+
+                Square squa = new Square(hei, Wid);
+
+                Console.WriteLine(squa.CalcualateArea);
+
+                Assert.AreEqual(25, squa.CalcualateArea);
+
+            }
+        }
+        //This is used to fail the test
+        [TestMethod]
+        public void MainIfStatmentForSquare2()
+        {
+
+            string UserInput = "Square";
+
+            if (UserInput.ToLower() == "square")
+            {
+                Console.WriteLine("What is the width of the square");
+                int Wid = 5;
+
+                Console.WriteLine("What is the height of the Square");
+                int hei = 5;
+
+                Square squa = new Square(hei, Wid);
+
+                Console.WriteLine(squa.CalcualateArea);
+
+                Assert.AreNotEqual(23, squa.CalcualateArea);
+
+            }
         }
 
+        //This is used to test the inner if to demonstrate the correct square shape calcuation
         [TestMethod]
-        public void EnumParseTest()
+        public void SquareTypeOfCalcuation()
         {
-            String chosenSquare = "Square";
-            ShapeT newShape = (ShapeT)Enum.Parse(typeof(ShapeT), chosenSquare);
-            
-            Assert.AreEqual(newShape, ShapeT.Square);
+
+            Console.WriteLine("What type of square calcualtion are you wanting: The 'Area' or the 'Parmeter'");
+            string squareTypeResponse = Console.ReadLine();
+            if ()
+            {
+
+            }
         }
     }
 }
-
