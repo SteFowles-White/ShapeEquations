@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapeCalculations
 {
-    class Program
+    public class Program
     {
 
         static void Main(string[] args)
@@ -60,15 +60,7 @@ namespace ShapeCalculations
 
             if (UserInputForShape.ToLower() == "square")
             {
-                    Console.WriteLine("What is the width of the square");
-                    int Wid = int.Parse(Console.ReadLine());
-
-                    Console.WriteLine("What is the height of the Square");
-                    int hei = int.Parse(Console.ReadLine());
-
-                    Square squa = new Square(hei, Wid);
-
-                    Console.WriteLine(squa.CalcualateArea);
+                    
 
             }
 
@@ -76,4 +68,3 @@ namespace ShapeCalculations
 
     }
 }
-
