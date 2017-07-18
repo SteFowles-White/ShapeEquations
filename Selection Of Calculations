@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShapeCalculations
+{
+    public class SelectionOfCalcuations
+
+    { 
+         public string SquareTypeOfCalcuation(string input)
+                {
+                string result = string.Empty;
+
+                switch (input.ToLower())
+                {
+                    case "area":
+                        Console.WriteLine("What is the width of the square");
+                        int wid = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("What is the height of the Square");
+                        int hei = int.Parse(Console.ReadLine());
+
+                        Square squaArea = new Square(hei, wid);
+
+                        result = Convert.ToString(squaArea.CalcualateArea);
+
+                        break;
+
+                    case "parameter":
+                        Console.WriteLine("What is the width of the square");
+                        int widparmeter = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("What is the height of the Square");
+                        int heiparmeter = int.Parse(Console.ReadLine());
+
+                        Square squaParameter = new Square(heiparmeter, widparmeter);
+
+                        result = Convert.ToString(squaParameter.CalcualateArea);
+                        break;
+                }
+
+                     return result;
+    }
+
+}
