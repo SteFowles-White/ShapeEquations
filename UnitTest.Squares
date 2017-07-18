@@ -89,17 +89,7 @@ namespace ShapeCalculations.Tests
             }
         }
 
-        //This is used to test the inner if to demonstrate the correct square shape calcuation
-        [TestMethod]
-        public void SquareTypeOfCalcuation()
-        {
+        //This is used to test the inner if to demonstrate the correct square shape calcuatio
 
-            Console.WriteLine("What type of square calcualtion are you wanting: The 'Area' or the 'Parmeter'");
-            string squareTypeResponse = Console.ReadLine();
-            if ()
-            {
-
-            }
-        }
     }
 }
