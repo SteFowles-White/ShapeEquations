@@ -60,6 +60,11 @@ namespace ShapeCalculations
 
             if (UserInputForShape.ToLower() == "square")
             {
+                SelectionOfCalcuations selectarea = new SelectionOfCalcuations();
+
+                Console.WriteLine("Are you wanting to find out the 'Area' or the 'Parameter of square : ");
+                string squareInput = Console.ReadLine();
+                selectarea.SquareTypeOfCalcuation(squareInput.ToLower());
                     
 
             }
